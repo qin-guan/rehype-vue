@@ -1,7 +1,7 @@
 {
   "name": "rehype-vue",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Plugin to convert HAST to Vue",
   "author": "Qin Guan",
   "license": "MIT",
