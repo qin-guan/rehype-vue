@@ -9,7 +9,12 @@
     "type": "git",
     "url": "https://github.com/qin-guan/rehype-vue"
   },
-  "keywords": ["unified", "vue", "rehype", "hast"],
+  "keywords": [
+    "unified",
+    "vue",
+    "rehype",
+    "hast"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -32,6 +37,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
+    "@mapbox/hast-util-table-cell-style": "^0.2.0",
     "hast-util-to-jsx-runtime": "^1.2.0"
   },
   "devDependencies": {
