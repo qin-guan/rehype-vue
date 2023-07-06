@@ -7,6 +7,7 @@ export default defineConfig({
     'esm',
   ],
   dts: true,
+  sourcemap: true,
   external: [
     'vue',
   ],
