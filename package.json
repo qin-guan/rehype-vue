@@ -1,0 +1,45 @@
+{
+  "name": "rehype-vue",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "Plugin to convert HAST to Vue",
+  "author": "Qin Guan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qin-guan/rehype-vue"
+  },
+  "keywords": ["unified", "vue", "rehype", "hast"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix ."
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "hast-util-to-jsx-runtime": "^1.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.7",
+    "@types/hast": "^2.3.4",
+    "eslint": "^8.44.0",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "unified": "^10.1.2"
+  }
+}
